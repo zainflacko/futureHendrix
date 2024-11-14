@@ -1,0 +1,99 @@
+@font-face {
+    font-family:nap ;
+    src: url("Napoli.ttf");
+}
+body{
+    background-image: url("f1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
+    
+}
+.container{
+    font-family: nap;
+    color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+
+    
+}
+.navlink a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    margin-right:15px;
+    
+}
+.navlink a:hover{
+    color: rgb(65, 4, 123);
+}
+h1{
+    text-align: center ;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media (max-width: 600px) {
+    body {
+        background-attachment:scroll; /* Disable fixed background on small devices */
+        background-image: url("25263.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+
+    .container {
+        font-size: 1.5rem; /* Reduce font size on mobile */
+        padding: 15px; /* Adjust padding for mobile */
+        text-align: center ;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Adjust header size on mobile */
+    }
+}
+
+/* Tablets (up to 768px) */
+@media (max-width: 768px) {
+    body {
+        background-image: url("25263.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;  /* Adjust background position for tablets */
+    }
+    .container {
+        font-size: 1.8rem; /* Adjust font size for tablet devices */
+        padding: 20px; /* Maintain consistent padding */
+        text-align: center ;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjust header size for tablet */
+    }
+}
+
+/* Larger Screens (Desktops) */
+@media (min-width: 1024px) {
+    
+    .container {
+        font-size: 2rem; /* Default text size for large screens */
+        padding: 30px; /* Add extra padding for larger screens */
+        text-align: center ;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Larger header size for desktop */
+    }
+}
